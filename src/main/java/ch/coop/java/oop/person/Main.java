@@ -1,6 +1,4 @@
-package person;
-
-import person.Person;
+package ch.coop.java.oop.person;
 
 public class Main {
 
@@ -35,6 +33,25 @@ public class Main {
         else {
             System.out.println("Sind nicht gleich!");
         }
+
+
+        Book book = new Book();
+        book.setTitle("Title");
+        book.setIsbn(1223);
+        book.setAuthor("test-author");
+
+        Book book2 = new Book();
+        book2.setTitle("Title2");
+        book2.setIsbn(122345);
+        book2.setAuthor("test-author-2");
+
+        System.out.println(book);
+
+
+        Library library1 = new Library();
+        library1.setBooks(new Book[]{book, book2});
+
+        System.out.println(library1);
 
     }
 }

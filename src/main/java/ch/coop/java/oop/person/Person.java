@@ -1,4 +1,4 @@
-package person;
+package ch.coop.java.oop.person;
 
 import java.util.Objects;
 
